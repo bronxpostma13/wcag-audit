@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+   font-family: 'Nunito', Arial, sans-serif;
+}
+  body {
+  background-color: #ffffff;
+  color: #363636;
+  line-height: 1.4;
+  text-align: center;
+  padding: 0 1rem;
+  font-size: 18px;
+   }
+header {
+      padding: 20px 0;
+     
+    }
+
+#logo img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+}
+
+nav {
+  background-color: #244363;
+  display: flex;
+  flex-direction: column; 
+  justify-content: space-between;
+  gap: 8px;
+  padding: 10px 0;
+  border-radius: 4px;
+  z-index: 10;
+
+     @media (min-width: 768px){
+    flex-direction: row;
+    justify-content: space-evenly;
+    position: sticky;
+    top:0;}
+
+    @media (min-width: 1024px) {
+    }
+  
+
+}
+nav ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-decoration: none;
+}
+
+nav li{
+    justify-content: space-between;
+    list-style: none;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+}
+
+nav a:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+.searchbar-section {
+  background-color: #f2f2f2;
+  padding: 15px 0;
+  display: flex;
+  justify-content: center;
+  
+}
+
+.searchbar {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  max-width: 500px;
+  @media (max-width: 480px) {
+
+
+  }
+}
+
+.searchbar input {
+  flex: 1;
+  padding: 10px;
+  border: 2px solid #d09482;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.searchbar button {
+  background-color: #d09482;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  @media (max-width: 480px) {
+
+
+  }
+}
+
+.searchbar button:hover {
+  background-color: #25585b;
+}
